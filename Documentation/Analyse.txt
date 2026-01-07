@@ -1,0 +1,20 @@
+ANALYSE DU PROJET
+
+Le projet consiste à concevoir une application web complète reposant sur une architecture moderne, conteneurisée et automatisée. L’objectif est de proposer une solution fiable, maintenable et conforme aux exigences de qualité, de sécurité et de réglementation (RGPD, RGAA).
+
+L’application est organisée selon une séparation claire des responsabilités :
+
+Backend : gestion des données, logique métier et sécurité
+Frontend : interface utilisateur, ergonomie et accessibilité
+Infrastructure : déploiement, supervision et automatisation
+Qualité : tests, conformité et documentation
+
+
+Les besoins principaux identifiés sont :
+
+Une API sécurisée pour l’échange des données
+Une interface utilisateur accessible et ergonomique
+Un système de déploiement automatisé (CI/CD)
+Un environnement Dockerisé reproductible
+Une supervision en temps réel de l’application
+Une conformité aux normes RGPD et RGAA

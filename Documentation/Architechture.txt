@@ -1,0 +1,90 @@
+1.ARCHITECTURE GLOBALE
+
+L’architecture adoptée repose sur un modèle client–serveur avec une approche microservices légère, orchestrée via Docker.
+
+Composants principaux :
+
+Frontend (Client Web)
+Backend (API REST)
+Base de données
+Pipeline CI/CD
+Outils de supervision et monitoring
+
+3.ARCHITECTURE TECHNIQUE
+
+Frontend :
+Application web accessible via navigateur
+Communication avec le backend via API REST (HTTP/HTTPS)
+Respect des normes d’accessibilité (RGAA)
+Séparation claire entre présentation et logique applicative
+
+Backend:
+API REST centralisant la logique métier
+Gestion de l’authentification et des autorisations
+Validation et sécurisation des données
+Journalisation des actions (logs)
+
+Base de données:
+Stockage persistant des données applicatives
+Accès sécurisé via le backend uniquement
+Sauvegardes et intégrité des données assurées
+
+
+4.CONTENEURISATION & DÉPLOIEMENT 
+
+Chaque composant de l’application est encapsulé dans un conteneur Docker :
+Conteneur Frontend
+Conteneur Backend
+Conteneur Base de données
+Conteneurs de supervision
+
+L’utilisation de Docker Compose permet :
+Le déploiement rapide de l’ensemble de l’application
+Une cohérence entre les environnements (dev, test, prod)
+Une maintenance simplifiée
+
+
+5.PIPELINE CI/CD
+
+Un pipeline CI/CD automatise :
+L’analyse du code
+L’exécution des tests
+La construction des images Docker
+Le déploiement automatisé
+
+Objectifs :
+Réduire les erreurs humaines
+Garantir la qualité du code
+Accélérer les mises en production
+
+
+6.SUPERVISION & MONITORING
+
+L’architecture intègre des outils de supervision :
+Prometheus pour la collecte des métriques
+Grafana pour la visualisation
+
+Ces outils permettent :
+Le suivi des performances
+La détection des incidents
+L’anticipation des problèmes techniques
+
+
+7.SÉCURITÉ & CONFORMITÉ
+
+Mesures mises en place :
+Sécurisation des accès API
+Gestion des logs
+Respect du RGPD (données personnelles)
+Respect du RGAA (accessibilité)
+Tests réguliers pour assurer la conformité
+
+8.SYNTHÈSE
+
+L’architecture proposée est :
+Modulaire
+Sécurisée
+Évolutive
+Conforme aux normes actuelles
+
+Elle garantit une application robuste, maintenable et adaptée à un contexte professionnel.
