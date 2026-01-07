@@ -1,0 +1,19 @@
+Serenic (M1) (Lead Backend & DevOps) : Responsable de l'API, de la base de données et du pipeline CI/CD.
+Hakem (M2) (Lead Frontend) : Responsable de l'interface utilisateur, de l'ergonomie et de l'accessibilité (RGAA).
+Jihad (M3) (Tests & Qualité) : Responsable de la stratégie de tests (Unitaires, Intégration, E2E) et de la conformité RGPD.
+Samy 4 (M4) (Ops & Monitoring) : Responsable de la conteneurisation Docker et de la mise en place de Grafana/Prometheus.
+
+Étape   Tâche                                               Responsables     Durée
+--------------------------------------------------------------------------------------
+1       Analyse & Architecture (Diagrammes et flux)         M1, M2, M3, M4   2h
+2       Conteneurisation (Dockerfiles & Docker Compose)     M4               3h
+3       Finalisation Backend (Endpoints & Sécurisation)     M1               3h
+4       Développement Frontend (Interface & Accessibilité)  M2               4h
+5       Pipeline CI/CD (Automatisation GitHub/GitLab)       M1               3h
+6       Stratégie de Tests (Unitaires, Intég. et E2E)       M3               3h
+7       Supervision & Monitoring (Grafana/Prometheus)       M4               2h
+8       Conformité & Sécurité (RGPD, RGAA, Logs)            M2, M3           2h
+9       Rapport Technique (Architecture, CI/CD, Maint.)     M1, M2, M3, M4   2h
+10      Support de soutenance (Synthèse et valorisation)    M1, M2, M3, M4   2h
+--------------------------------------------------------------------------------------
+Total                                                                        26h
