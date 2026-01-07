@@ -1,0 +1,81 @@
+obrail-project/
+│
+├── README.md
+│
+├── docker-compose.yml
+│
+├── .env.example
+│
+├── .gitignore
+│
+├── docs/
+│   ├── architecture.txt
+│   ├── ci-cd.txt
+│   ├── monitoring.txt
+│   └── rgpd-rgaa.txt
+│
+├── backend/
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   ├── main.py
+│   │
+│   ├── app/
+│   │   ├── core/
+│   │   │   ├── config.py
+│   │   │   └── security.py
+│   │   │
+│   │   ├── db/
+│   │   │   ├── base.py
+│   │   │   ├── session.py
+│   │   │   └── models.py
+│   │   │
+│   │   ├── api/
+│   │   │   └── v1/
+│   │   │       ├── routes_health.py
+│   │   │       ├── routes_trips.py
+│   │   │       └── routes_stats.py
+│   │   │
+│   │   ├── schemas/
+│   │   │   ├── trip.py
+│   │   │   └── stats.py
+│   │   │
+│   │   └── services/
+│   │       └── trip_service.py
+│   │
+│   └── tests/
+│       ├── test_health.py
+│       ├── test_trips.py
+│       └── conftest.py
+│
+├── frontend/
+│   ├── Dockerfile
+│   ├── package.json
+│   ├── vite.config.js
+│   │
+│   ├── src/
+│   │   ├── api/
+│   │   │   └── client.ts
+│   │   │
+│   │   ├── components/
+│   │   │   ├── HealthBadge.tsx
+│   │   │   ├── StatsPanel.tsx
+│   │   │   └── Pagination.tsx
+│   │   │
+│   │   ├── pages/
+│   │   │   └── TripsPage.tsx
+│   │   │
+│   │   ├── App.tsx
+│   │   └── main.tsx
+│   │
+│   └── tests/
+│       └── e2e/
+│           └── trips.spec.ts
+│
+├── monitoring/
+│   ├── prometheus.yml
+│   └── grafana/
+│       └── dashboards/
+│           └── api_dashboard.json
+│
+└── ci-cd/
+    └── pipeline.yml
